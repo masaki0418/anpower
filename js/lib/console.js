@@ -1,0 +1,1 @@
+"use strict";var app=app||{};app.log=function(){if(app.DEBUG){var o=Array.prototype.slice.call(arguments);window.console&&window.console.log&&(o.unshift("%c[DUBUG]","font-weight: bold;font-size: 12px;color: #FF0000;"),console.log.apply(console,o))}};
