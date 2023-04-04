@@ -1,6 +1,7 @@
 <!doctype html>
-<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/global_inc.php'); ?>
-<html><head>
+<!-- <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/global_inc.php'); ?> -->
+<html>
+<head>
 <meta charset="utf-8">
 <title>特製羊羹 anpower(アンパワー) |  京菓子處 鼓月 トップページ</title>
 <meta name="description" content="京菓子處 鼓月が生み出した特性羊羹「アンパワー」。スポーツの補給食や熱中症予防に。たんぱく質の豊富な小豆の力に加え、高吸収型ポリフェノール100mgと必須アミノ酸（BCAA）を配合。京菓子屋だからこそ実現できた味で、美味しくエネルギー補給ができる商品をお作りしました。">
@@ -16,197 +17,179 @@
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
 <link rel="stylesheet" href="css/gnav.css" media="screen and (max-width:1024px)">
-<link rel="stylesheet" href="css/lower.css">-->
-	
-<style>
+<link rel="stylesheet" href="css/lower.css">
 
-#usemth { width: auto !important; }
+<style>
+#usemth {
+	width: auto !important;
+}
+
 @media screen and (max-width: 1024px) {
-	#usemth { width: 100% !important; }
-	#intro p {
-		padding-top: 20px;
-	}
+#usemth {
+	width: 100% !important;
+}
+#intro p {
+	padding-top: 20px;
+}
 }
 </style>
-</head>
-<body>
+</head><body>
 <header id="header" class="header cf">
-		<div class="header_sp sp">
-				<div class="header_main cf">
-						<div class="logo">
-								<p><a href="index.html"><img src="img/sp/logo.png" alt="anpower"></a></p>
-						</div>
-						<p class="right_logo"><a href="https://www.kogetsu.com/" target="_blank"><img src="img/sp/hum_logo.png" alt="鼓月"></a></p>
-				</div>
-				<nav class="gnav gnav--gift">
-						<button type="button" class="gnav__button"></button>
-						<div class="gnav__container">
-								<ul class="gnav__menu">
-										<li class="gnav__menu__item lg_hidden">
-												<ul>
-														<li><a href="index.html"><img src="img/sp/hum_nav01.png" alt="ホーム"></a></li>
-														<li><a href="development.html"><img src="img/sp/hum_nav02.png" alt="開発ストーリー"></a></li>
-														<li><a href="nutrition.html"><img src="img/sp/hum_nav03.png" alt="成分情報"></a></li>
-														<li><a href="shop_list.html"><img src="img/sp/hum_nav04.png" alt="販売店リスト"></a></li>
-														<li><a href="<?php echo $shopurl; ?>" target="_blank"><img src="img/sp/hum_nav05.png" alt="ネット購入"></a></li>
-														<li><a  onclick="javascript:openPage(\'https://shop.anpower.jp/CART/login.php\',\'mypage\'); return false;" href="https://shop.anpower.jp/CART/login.php" target="_blank"><img src="/img/sp/hum_nav06.png" alt="マイページ"></a></li>
-												</ul>
-										</li>
-								</ul>
-								<p class="logo"><a href="https://www.kogetsu.com/" target="_blank"><img src="img/sp/hum_logo.png" alt="鼓月"></a></p>
-								<ul class="sns">
-										<li><a href="https://www.facebook.com/anpower-%E3%82%A2%E3%83%B3%E3%83%91%E3%83%AF%E3%83%BC-%E7%89%B9%E8%A3%BD%E7%BE%8A%E7%BE%B9-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%92%E9%A0%91%E5%BC%B5%E3%82%8B%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB-418408365405273/" target="_blank"><img src="img/icon_face.png" alt="Facebook"></a></li>
-								</ul>
-						</div>
-				</nav>
-		</div>
+  <div class="header_sp sp">
+    <div class="header_main cf">
+      <div class="logo">
+        <p><a href="index.html"><img src="img/sp/logo.png" alt="anpower"></a></p>
+      </div>
+      <p class="right_logo"><a href="https://www.kogetsu.com/" target="_blank"><img src="img/sp/hum_logo.png" alt="鼓月"></a></p>
+    </div>
+    <nav class="gnav gnav--gift">
+      <button type="button" class="gnav__button"></button>
+      <div class="gnav__container">
+        <ul class="gnav__menu">
+          <li class="gnav__menu__item lg_hidden">
+            <ul>
+              <li><a href="index.html"><img src="img/sp/hum_nav01.png" alt="ホーム"></a></li>
+              <li><a href="development.html"><img src="img/sp/hum_nav02.png" alt="開発ストーリー"></a></li>
+              <li><a href="nutrition.html"><img src="img/sp/hum_nav03.png" alt="成分情報"></a></li>
+              <li><a href="shop_list.html"><img src="img/sp/hum_nav04.png" alt="販売店リスト"></a></li>
+              <li><a href="<?php echo $shopurl; ?>" target="_blank"><img src="img/sp/hum_nav05.png" alt="ネット購入"></a></li>
+              <li><a  onclick="javascript:openPage(\'https://shop.anpower.jp/CART/login.php\',\'mypage\'); return false;" href="https://shop.anpower.jp/CART/login.php" target="_blank"><img src="/img/sp/hum_nav06.png" alt="マイページ"></a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="logo"><a href="https://www.kogetsu.com/" target="_blank"><img src="img/sp/hum_logo.png" alt="鼓月"></a></p>
+        <ul class="sns">
+          <li><a href="https://www.facebook.com/anpower-%E3%82%A2%E3%83%B3%E3%83%91%E3%83%AF%E3%83%BC-%E7%89%B9%E8%A3%BD%E7%BE%8A%E7%BE%B9-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%92%E9%A0%91%E5%BC%B5%E3%82%8B%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB-418408365405273/" target="_blank"><img src="img/icon_face.png" alt="Facebook"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 <main>
-		<section id="fv">
-				<div class="slider_bg pc">
-						<div class="slider_wrap">
-								<aside id="left" class="pc">
-										<h1><a href="https://www.kogetsu.com/" target="_blank"><img src="img/logo.png" alt="鼓月"></a></h1>
-										<nav>
-												<ul>
-														<li><a href="development.html"><img src="img/nav_dev.png" alt="開発ストーリー"></a></li>
-														<li><a href="nutrition.html"><img src="img/nav_ingredient.png" alt="成分表示"></a></li>
-														<li><a href="shop_list.html"><img src="img/nav_shop.png" alt="販売店リスト"></a></li>
-														<li><a href="<?php echo $shopurl; ?>" target="_blank"><img src="img/nav_online.png" alt="ネット購入"></a></li>
-														<li><a  onclick="javascript:openPage(\'https://shop.anpower.jp/CART/login.php\',\'mypage\'); return false;" href="https://shop.anpower.jp/CART/login.php"  target="_blank"><img src="img/nav_mypage.png" alt="マイページ"></a></li>
-												</ul>
-										</nav>
-										<ul class="sns">
-												<li><a href="https://www.facebook.com/anpower-%E3%82%A2%E3%83%B3%E3%83%91%E3%83%AF%E3%83%BC-%E7%89%B9%E8%A3%BD%E7%BE%8A%E7%BE%B9-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%92%E9%A0%91%E5%BC%B5%E3%82%8B%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB-418408365405273/" target="_blank"><img src="img/icon_face.png" alt="Facebook"></a></li>
-										</ul>
-								</aside>
-								<div class="slider">
-										<ul>
-												<li><img src="img/slider_rep.jpg" alt=""></li>
-												<li><img src="img/slider_01.png" alt=""></li>
-												<li><img src="img/slider_03.png" alt=""></li>
-												
-										</ul>
-								</div>
-						</div>
-				</div>
-				<div class="sp slider"> <ul><li><img src="img/sp/fv_rs.jpg" alt=""></li><li><img src="img/sp/fv2.png" alt=""></li><li><img src="img/sp/fv.png" alt=""></li></ul> </div>
-		</section>
-		<section id="intro">
-					
-					<div class="intro-cafe">
-						<div class="intro_inner cf">
-							
-								<div class="box-right">
-									<a href="#cv-cafe"><img src="img/an-cafe_item01.png"></a>
-								</div>
-							
-								<div class="box-left">
-									<img src="img/an-cafe_txt01.png" class="intro-title">
-									<h2>天然の抽出成分配合「アンパワー カフェイン入り」</h2>
-									<ul>
-										<li>anpowerの成分そのままに<strong>カフェイン配合バージョン</strong>が登場。</li>
-										<li>超臨界二酸化炭素法により抽出した<strong>無水カフェインを27.6mg配合</strong>。</li>
-										<li>血糖値の上昇を穏やかにする<strong>パラチノース配合</strong>。</li>
-										<li>カフェインにあわせて炊き上げる<strong>こだわりの自家製餡</strong>。</li>
-									</ul>
-								</div>
-							
-						</div>
-					</div>
-							
-							
-					<div class="intro-power">
-						<div class="intro_inner cf">
-							
-								<div class="box-left">
-									<a href="#cv"><img src="img/an-cafe_item02.png"></a>
-								</div>
-								<div class="box-right">
-									<img src="img/an-cafe_txt02.png" class="intro-title">
-									<h2>京菓子の技術を応用して開発された「アンパワー」</h2>
-									<ul>
-										<li>補給食には珍しい<strong>低分子ポリフェノール</strong>配合。</li>
-										<li>必須アミノ酸・塩分・マルトデキストリン配合の<strong>マルチフード</strong>。</li>
-										<li>片手+口で<strong>開けやすいパッケージ</strong>。</li>
-										<li>和菓子職人謹製の<strong>上生菓子用「餡」</strong>を使用。</li>
-									</ul>
-								</div>
-						</div>
-					</div>
-			
-			<div class="situation">
-				<img src="img/an-cafe_photo01.png" alt="ランニング"><img src="img/an-cafe_photo02.png" alt="トライスロン"><img src="img/an-cafe_photo03.png" alt="登山"><img src="img/an-cafe_photo04.png" alt="軽食">
-			
-			</div>
-				<div>
-					<p style="margin: 20px 0; text-align: center; " ><img src="img/use.png" alt="開け方" id="usemth"></p>
-				</div>
-		</section>
-		<section id="news">
-				<div class="news_in">
-						<div class="area_text">
-								<h2><img src="img/h_news.png" alt="NEWS"></h2>
-								<ul>
-										<li> <a href="news_detail201127.html">
-												<ul>
-														<li class="date">2020.11.27</li>
-														<li class="text">天然の抽出成分配合「アンパワー カフェイン入り」登場！
- </li>
-												</ul>
-												</a> </li>
-										<li> <a href="news_detail200813.html">
-												<ul>
-														<li class="date">2020.8.13</li>
-														<li class="text">TBS「Nスタ」でanpowerが取り上げられました。
- </li>
-												</ul>
-												</a> </li>
-										<li> <a href="/press-200709.pdf" target="_blank">
-												<ul>
-														<li class="date">2020.7.9</li>
-														<li class="text">【プレスリリース】全国のモンベルストアで、夏のアウトドア行動食にぴったりな補給羊羹anpowerを7月14日より取り扱い開始。
- </li>
-												</ul>
-												</a> </li>
-										<li> <a href="/press-200514.pdf" target="_blank">
-												<ul>
-														<li class="date">2020.5.14</li>
-														<li class="text">【プレスリリース】エネルギー補給ようかんanpower（アンパワー）を、2020年5月14日（木）より全国どこでも送料330円でご自宅のポストに届く「10本入りお得セット」を販売開始いたします。</li>
-												</ul>
-												</a> </li>
-										<li> <a href="news_detail_200227.html">
-												<ul>
-														<li class="date">2020.2.27</li>
-														<li class="text">京都マラソン(おもてなし広場)に出展し、来場者の皆様にanpower(アンパワー)の試食・販売を行いました。</li>
-												</ul>
-												</a> </li>
-								
-										<li> <a href="news_detail2.html">
-												<ul>
-														<li class="date">2020.1.22</li>
-														<li class="text">2月14日～15日と京都マラソンおこしやす広場に出展します。</li>
-												</ul>
-												</a> </li>
-												
-										<li> <a href="news_detail.html">
-												<ul>
-														<li class="date">2019.11.27</li>
-														<li class="text">11月29日に大阪マラソンにブース出展します。</li>
-												</ul>
-												</a> </li>
-										
-								</ul>
-								<p class="all"><a href="news_list.html">ALL</a></p>
-						</div>
-				</div>
-		</section>
-		
-<?php echo $SECT_cv; ?>
-	
+  <section id="fv">
+    <div class="slider_bg pc">
+      <div class="slider_wrap">
+        <aside id="left" class="pc">
+          <h1><a href="https://www.kogetsu.com/" target="_blank"><img src="img/logo.png" alt="鼓月"></a></h1>
+          <nav>
+            <ul>
+              <li><a href="development.html"><img src="img/nav_dev.png" alt="開発ストーリー"></a></li>
+              <li><a href="nutrition.html"><img src="img/nav_ingredient.png" alt="成分表示"></a></li>
+              <li><a href="shop_list.html"><img src="img/nav_shop.png" alt="販売店リスト"></a></li>
+              <li><a href="<?php echo $shopurl; ?>" target="_blank"><img src="img/nav_online.png" alt="ネット購入"></a></li>
+              <li><a  onclick="javascript:openPage(\'https://shop.anpower.jp/CART/login.php\',\'mypage\'); return false;" href="https://shop.anpower.jp/CART/login.php"  target="_blank"><img src="img/nav_mypage.png" alt="マイページ"></a></li>
+            </ul>
+          </nav>
+          <ul class="sns">
+            <li><a href="https://www.facebook.com/anpower-%E3%82%A2%E3%83%B3%E3%83%91%E3%83%AF%E3%83%BC-%E7%89%B9%E8%A3%BD%E7%BE%8A%E7%BE%B9-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%92%E9%A0%91%E5%BC%B5%E3%82%8B%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB-418408365405273/" target="_blank"><img src="img/icon_face.png" alt="Facebook"></a></li>
+          </ul>
+        </aside>
+        <div class="slider">
+          <ul>
+            <li><img src="img/slider_rep.jpg" alt=""></li>
+            <li><img src="img/slider_01.png" alt=""></li>
+            <li><img src="img/slider_03.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sp slider">
+      <ul>
+        <li><img src="img/sp/fv_rs.jpg" alt=""></li>
+        <li><img src="img/sp/fv2.png" alt=""></li>
+        <li><img src="img/sp/fv.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+  <section id="intro">
+    <div class="intro-cafe">
+      <div class="intro_inner cf">
+        <div class="box-right"> <a href="#cv-cafe"><img src="img/an-cafe_item01.png"></a> </div>
+        <div class="box-left"> <img src="img/an-cafe_txt01.png" class="intro-title">
+          <h2>天然の抽出成分配合「アンパワー カフェイン入り」</h2>
+          <ul>
+            <li>anpowerの成分そのままに<strong>カフェイン配合バージョン</strong>が登場。</li>
+            <li>超臨界二酸化炭素法により抽出した<strong>無水カフェインを27.6mg配合</strong>。</li>
+            <li>血糖値の上昇を穏やかにする<strong>パラチノース配合</strong>。</li>
+            <li>カフェインにあわせて炊き上げる<strong>こだわりの自家製餡</strong>。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="intro-power">
+      <div class="intro_inner cf">
+        <div class="box-left"> <a href="#cv"><img src="img/an-cafe_item02.png"></a> </div>
+        <div class="box-right"> <img src="img/an-cafe_txt02.png" class="intro-title">
+          <h2>京菓子の技術を応用して開発された「アンパワー」</h2>
+          <ul>
+            <li>補給食には珍しい<strong>低分子ポリフェノール</strong>配合。</li>
+            <li>必須アミノ酸・塩分・マルトデキストリン配合の<strong>マルチフード</strong>。</li>
+            <li>片手+口で<strong>開けやすいパッケージ</strong>。</li>
+            <li>和菓子職人謹製の<strong>上生菓子用「餡」</strong>を使用。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="situation"> <img src="img/an-cafe_photo01.png" alt="ランニング"><img src="img/an-cafe_photo02.png" alt="トライスロン"><img src="img/an-cafe_photo03.png" alt="登山"><img src="img/an-cafe_photo04.png" alt="軽食"> </div>
+    <div>
+      <p style="margin: 20px 0; text-align: center; " ><img src="img/use.png" alt="開け方" id="usemth"></p>
+    </div>
+  </section>
+  <?php echo $SECT_cv; ?>
+  <section id="news">
+    <div class="news_in">
+      <div class="area_text">
+        <h2><img src="img/h_news.png" alt="NEWS"></h2>
+        <ul>
+          <li> <a href="news_detail201127.html">
+            <ul>
+              <li class="date">2020.11.27</li>
+              <li class="text">天然の抽出成分配合「アンパワー カフェイン入り」登場！ </li>
+            </ul>
+            </a> </li>
+          <li> <a href="news_detail200813.html">
+            <ul>
+              <li class="date">2020.8.13</li>
+              <li class="text">TBS「Nスタ」でanpowerが取り上げられました。 </li>
+            </ul>
+            </a> </li>
+          <li> <a href="/press-200709.pdf" target="_blank">
+            <ul>
+              <li class="date">2020.7.9</li>
+              <li class="text">【プレスリリース】全国のモンベルストアで、夏のアウトドア行動食にぴったりな補給羊羹anpowerを7月14日より取り扱い開始。 </li>
+            </ul>
+            </a> </li>
+          <li> <a href="/press-200514.pdf" target="_blank">
+            <ul>
+              <li class="date">2020.5.14</li>
+              <li class="text">【プレスリリース】エネルギー補給ようかんanpower（アンパワー）を、2020年5月14日（木）より全国どこでも送料330円でご自宅のポストに届く「10本入りお得セット」を販売開始いたします。</li>
+            </ul>
+            </a> </li>
+          <li> <a href="news_detail_200227.html">
+            <ul>
+              <li class="date">2020.2.27</li>
+              <li class="text">京都マラソン(おもてなし広場)に出展し、来場者の皆様にanpower(アンパワー)の試食・販売を行いました。</li>
+            </ul>
+            </a> </li>
+          <li> <a href="news_detail2.html">
+            <ul>
+              <li class="date">2020.1.22</li>
+              <li class="text">2月14日～15日と京都マラソンおこしやす広場に出展します。</li>
+            </ul>
+            </a> </li>
+          <li> <a href="news_detail.html">
+            <ul>
+              <li class="date">2019.11.27</li>
+              <li class="text">11月29日に大阪マラソンにブース出展します。</li>
+            </ul>
+            </a> </li>
+        </ul>
+        <p class="all"><a href="news_list.html">ALL</a></p>
+      </div>
+    </div>
+  </section>
 </main>
-<?php echo $GL_FOOTER; ?>
-<?php echo $GL_FOOTJS; ?>
+<?php echo $GL_FOOTER; ?> <?php echo $GL_FOOTJS; ?> 
 <script>
 $('.slider ul').slick({
     autoplay:true,
@@ -215,6 +198,6 @@ $('.slider ul').slick({
 		fade:true,
     dots:true
 });
-</script> 
+</script>
 </body>
 </html>
